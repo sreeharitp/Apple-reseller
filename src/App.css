@@ -10,4 +10,8 @@ body {
 }
 p{
     line-height: 1.4;
+    color: #44474B;
+}
+.box-shadow{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }

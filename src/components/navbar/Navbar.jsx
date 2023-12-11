@@ -1,8 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { navlinks } from "../../constants";
-import { UilSearch, UilHeart, UilUserCircle,UilBars  } from '@iconscout/react-unicons'
-
+import {
+  UilSearch,
+  UilHeart,
+  UilUserCircle,
+  UilBars,
+} from "@iconscout/react-unicons";
 
 const Navbar = () => {
   return (
@@ -10,18 +14,17 @@ const Navbar = () => {
       <Link to="/">Logo</Link>
       <ul className=" items-center gap-8 hidden lg:flex">
         {navlinks.map((items) => (
-          <li className="text-[#44474B]">{items.link}</li>
+          <li className="">{items.link}</li>
         ))}
       </ul>
       <div className=" items-center gap-4 hidden lg:flex">
         <UilHeart />
         <UilSearch />
         <UilUserCircle />
-
       </div>
-   <div className="lg:hidden">
-   <UilBars  />
-   </div>
+      <div className="lg:hidden">
+        <UilBars />
+      </div>
     </div>
   );
 };

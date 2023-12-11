@@ -12,6 +12,12 @@
     .padding-x {
       @apply lg:px-24 px-6;
     }
+    .padding-l {
+      @apply lg:pl-24 pl-6;
+    }
+    .padding-r {
+      @apply lg:pr-24 pr-6;
+    }
   
     .padding-y {
       @apply lg:py-24 py-12;
