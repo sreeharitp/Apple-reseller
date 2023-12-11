@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+
+    .box-width {
+      @apply 2xl:max-w-[1536px] w-full m-auto;
+    }
+  
+    .padding-x {
+      @apply lg:px-24 px-6;
+    }
+  
+    .padding-y {
+      @apply lg:py-24 py-12;
+    }
+  
+    .section-padding {
+      @apply lg:py-24 py-20;
+    }
+  
+    .padding-top {
+      @apply lg:pt-24 pt-12;
+    }
+  
+    .padding-bottom {
+      @apply lg:pb-24 pb-12;
+    }
+  
+  }

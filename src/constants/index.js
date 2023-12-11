@@ -1,0 +1,37 @@
+export const navlinks=[
+    {
+        id:1,
+        link:"Home",
+        url:""
+    },
+    {
+        id:2,
+        link:"Mac",
+        url:""
+    },
+    {
+        id:3,
+        link:"iPhone",
+        url:""
+    },
+    {
+        id:4,
+        link:"iPad",
+        url:""
+    },
+    {
+        id:5,
+        link:"Apple Watch",
+        url:""
+    },
+    {
+        id:6,
+        link:"AirPods",
+        url:""
+    },
+    {
+        id:5,
+        link:"Accessories",
+        url:""
+    },
+]
