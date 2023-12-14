@@ -1,5 +1,5 @@
 import React from "react";
-import { FiEye } from "react-icons/fi";
+import { FiEye,FiArrowRight  } from "react-icons/fi";
 import { IoIosCheckbox } from "react-icons/io";
 import { Link } from "react-router-dom";
 const RegisterForm = () => {
@@ -33,8 +33,8 @@ const RegisterForm = () => {
             </p>
           </div>
           <Link to="/add_product">
-            <button className="uppercase bg-black text-white p-3 text-[14px] w-full rounded-sm">
-              REGISTER
+            <button className="uppercase bg-black tracking-widest text-white p-2.5 text-[13px] w-full rounded-sm flex items-center justify-center gap-2">
+            REGISTER  <FiArrowRight size={18}/>
             </button>
           </Link>
         </form>

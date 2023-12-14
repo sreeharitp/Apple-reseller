@@ -203,3 +203,58 @@ export const filters = [
   },
   
 ];
+
+
+
+export const productList = [
+  {
+    id: 1,
+    name: "iPhone 15 Pro",
+    price: "₹134900",
+    img: product1,
+    status: "Active",
+    date:"10/07/2023"
+  },
+  {
+    id: 2,
+    name: "iPhone 15 Plus",
+    price: " ₹89900",
+    img: product2,
+    status: "Active",
+    date:"10/07/2023"
+  },
+  {
+    id: 3,
+    name: "iPhone 14",
+    price: "  ₹69900",
+    img: product3,
+    status: "Disabled",
+    date:"10/07/2023"
+  },
+  {
+    id: 4,
+    name: "iPhone 13",
+    price: "  ₹59900",
+    img: product4,
+    status: "Active",
+    date:"10/07/2023"
+  },
+  {
+    id: 5,
+    name: "iPhone 15 Pro",
+    price: " ₹134900",
+    img: product1,
+    status: "Active",
+    date:"10/07/2023"
+  },
+  {
+    id: 6,
+    name: "iPhone 15 Pro",
+    price: " ₹134900",
+    img: product1,
+    status: "Disabled",
+    date:"10/07/2023"
+  },
+
+
+];

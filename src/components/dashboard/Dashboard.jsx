@@ -1,8 +1,9 @@
-import { useState } from "react";
 import { Tab } from "@headlessui/react";
 import Tiles from "./Tiles";
 import Profile from "./Profile";
 import Products from "./Products";
+import { FiLayers,FiEdit,FiShoppingBag ,FiSettings,FiPower   } from "react-icons/fi";
+
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -10,69 +11,58 @@ function classNames(...classes) {
 
 export default function Dashboard() {
   return (
-    <div className="padding-x box-width padding-y ">
+    <div className="padding-x box-width mt-16 ">
       <Tab.Group>
-        <div className="flex items-start gap-8">
-          <Tab.List className="w-[35%]">
+        <div className="flex items-start flex-col xl:flex-row gap-8">
+          <Tab.List className="w-full xl:w-[35%] flex-col sm:flex xl:flex-col gap-3">
             <Tab
               className={({ selected }) =>
                 classNames(
-                  "w-full rounded-0 py-2.5",
+                  "w-full rounded-0 py-2.5 flex items-center gap-2 pl-4 xl:pl-8",
                   selected
-                    ? "bg-[#2DA5F3] text-white"
-                    : "bg-white text-[#5F6C72]"
+                    ? "bg-[#2DA5F3] text-white outline-none"
+                    : "bg-white text-[#5F6C72] border border[#E4E7E9]"
                 )
               }
             >
-              Dashboard
+              <FiLayers/>Dashboard
             </Tab>
             <Tab
               className={({ selected }) =>
                 classNames(
-                  "w-full rounded-0 py-2.5",
+                  "w-full rounded-0 py-2.5 flex items-center gap-2 pl-4 xl:pl-8",
                   selected
-                    ? "bg-[#2DA5F3] text-white"
-                    : "bg-white text-[#5F6C72]"
+                    ? "bg-[#2DA5F3] text-white outline-none"
+                    : "bg-white text-[#5F6C72] border border[#E4E7E9]"
                 )
               }
             >
-              My Profile
+             <FiEdit /> Edit Profile
             </Tab>
             <Tab
               className={({ selected }) =>
                 classNames(
-                  "w-full rounded-0 py-2.5",
+                  "w-full rounded-0 py-2.5 flex items-center gap-2 pl-4 xl:pl-8",
                   selected
-                    ? "bg-[#2DA5F3] text-white"
-                    : "bg-white text-[#5F6C72]"
+                    ? "bg-[#2DA5F3] text-white outline-none"
+                    : "bg-white text-[#5F6C72] border border[#E4E7E9]"
                 )
               }
             >
-              My Products
+              <FiShoppingBag />My Products
             </Tab>
+           
             <Tab
               className={({ selected }) =>
                 classNames(
-                  "w-full rounded-0 py-2.5",
+                  "w-full rounded-0 py-2.5 flex items-center gap-2 pl-4 xl:pl-8",
                   selected
-                    ? "bg-[#2DA5F3] text-white"
-                    : "bg-white text-[#5F6C72]"
+                    ? "bg-[#2DA5F3] text-white  outline-none"
+                    : "bg-white text-[#5F6C72] border border[#E4E7E9]"
                 )
               }
             >
-              Settings
-            </Tab>
-            <Tab
-              className={({ selected }) =>
-                classNames(
-                  "w-full rounded-0 py-2.5",
-                  selected
-                    ? "bg-[#2DA5F3] text-white"
-                    : "bg-white text-[#5F6C72]"
-                )
-              }
-            >
-              Logout
+             <FiPower /> Logout
             </Tab>
           </Tab.List>
           <Tab.Panels className="w-full">

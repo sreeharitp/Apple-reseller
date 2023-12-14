@@ -74,7 +74,7 @@ const ProductAdd = () => {
           </form>
         </div>
         <Link to="/success">
-          <button className="uppercase bg-black text-white px-16 py-3 text-[14px]  rounded-md">
+          <button className="tracking-widest uppercase bg-black text-white px-16 py-2.5 text-[13px]  rounded-md">
             Sell
           </button>
         </Link>

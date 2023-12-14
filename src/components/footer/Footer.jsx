@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div className='padding-x'>Footer</div>
+    <div className='padding-x text-center padding-y'>Footer</div>
   )
 }
 
