@@ -10,20 +10,20 @@ import Card3 from "../card/Card3";
 
 const HomeSection = () => {
   return (
-    <div className="padding-x box-width">
-      <div className="flex flex-col sm:flex-row items-center gap-5 h-auto sm:h-[450px]">
+    <div className="padding-x box-width padding-bottom">
+      <div className="flex flex-col sm:flex-row items-center gap-5 h-auto sm:h-[350px] xl:h-[480px]">
         <div className="bg-gradient1 bg-cover bg-no-repeat p-5 sm:p-10 rounded-2xl sm:w-[70%] h-[400px] sm:h-full">
-          <div className="max-w-[80%] sm:max-w-[70%] flex flex-col justify-between items-start h-full">
+          <div className="max-w-[80%] xl:max-w-[70%] flex flex-col justify-between items-start h-full">
             <div>
-            <h1 className="text-[30px] sm:text-[40px] leading-[40px] sm:leading-[50px] font-semibold">
+            <h1 className="text-[28px] xl:text-[40px] leading-[35px] xl:leading-[50px] font-semibold">
               The Best Way to Buy the Products You Love.
             </h1>
-            <p className="mt-4  font-light text-normal sm:text-[18px]">
+            <p className="mt-4  font-light text-normal xl:text-[18px]">
               Explore all-new personalization features, privacy and security
               enhancements, and more ways to communicate seamlessly.
             </p>
             </div>
-            <button className="mt-10  bg-black text-white rounded-full px-8 py-2 tetx-[18px] font-medium">
+            <button className="mt-10  bg-black text-white rounded-full px-8 py-2.5 tetx-[18px] font-medium">
               Explore Now
             </button>
           </div>
@@ -32,12 +32,12 @@ const HomeSection = () => {
           <Card1
             title="iPhone Collection"
             price="From ₹80983.00"
-            url="/"
+            url="/product_list"
             img={iphone}
           />
         </div>
       </div>
-      <div className="flex flex-col sm:flex-row items-center gap-5 h-auto sm:h-[450px]  mt-5">
+      <div className="flex flex-col sm:flex-row items-center gap-5 h-auto sm:h-[350px] xl:h-[480px]  mt-5">
         <div className="w-full sm:w-[50%] h-full">
           <Card2
             title="MacBook Collection"
@@ -55,7 +55,7 @@ const HomeSection = () => {
           />
         </div>
       </div>
-      <div className="flex flex-col sm:flex-row items-center gap-5 h-auto sm:h-[450px]  mt-5">
+      <div className="flex flex-col sm:flex-row items-center gap-5 h-auto sm:h-[350px] xl:h-[480px]  mt-5">
         <div className="w-full  sm:w-[50%] h-full">
           <Card1
             title="Apple Watches"

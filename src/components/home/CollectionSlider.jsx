@@ -1,10 +1,8 @@
 import React from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-import product1 from "../../assets/product1.png"
-import product2 from "../../assets/product2.png"
-import product3 from "../../assets/product3.png"
-import product4 from "../../assets/product4.png"
+import { FiHeart } from "react-icons/fi";
+
 
 // Import Swiper styles
 import 'swiper/css';
@@ -12,8 +10,13 @@ import 'swiper/css';
 
 // import required modules
 import { Navigation } from 'swiper/modules';
+import { collection } from '../../constants';
 
 export default function CollectionSlider() {
+
+
+
+
     return (
         <>
             <Swiper
@@ -24,58 +27,44 @@ export default function CollectionSlider() {
                     nextEl: ".next-btn",
                 }}
                 modules={[Navigation]}
-                className="mySwiper relative"
+                className="mySwiper relative padding-l"
                 breakpoints={{
                     640: {
                         slidesPerView: 1.5,
-                        spaceBetween: 20,
+
                     },
                     768: {
-                        slidesPerView: 3,
-                        spaceBetween: 20,
+                        slidesPerView: 3.5,
+
                     },
                     1024: {
+                        slidesPerView: 3.5,
+
+                    },
+                    1536: {
                         slidesPerView: 4.5,
-                        spaceBetween: 30,
+
                     },
                 }}
             >
-                <SwiperSlide>
-                    <div className='p-5 m-1 rounded-xl box-shadow text-center'>
-                        <img src={product1} alt="" className='m-auto w-full' />
-                        <div className='mt-3 mb-2'>
-                            <h6 className='text-[#44474B] mb-1'>iPhone 14 Pro</h6>
-                            <h6 className='text-[18px] font-semibold'>From ₹ 69,900</h6>
+                {collection.map((items) => (
+
+                    <SwiperSlide key={items.id}>
+                        <div className='m-1'>
+                            <div className='bg-[#F2F4F5] w-full p-6'>
+                                <img src={items.img} alt="" className='mx-auto my-3 w-full' />
+                            </div>
+                            <div className='p-2 flex justify-between'>
+                                <div>
+                                    <h6 className='text-[#475156] text-[13px] sm:text-[14px] font-light'>{items.name}</h6>
+                                    <h6 className='font-medium text-[15px] sm:text-[16px]'>{items.price}</h6>
+                                </div>
+                                <FiHeart size={18} className='text-[#585c60] cursor-pointer' />
+                            </div>
                         </div>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className='p-5 m-1 rounded-xl box-shadow text-center'>
-                        <img src={product2} alt="" className='m-auto w-full' />
-                        <div className='mt-3 mb-2'>
-                            <h6 className='text-[#44474B] mb-1'>iPhone 14 Pro</h6>
-                            <h6 className='text-[18px] font-semibold'>From ₹ 69,900</h6>
-                        </div>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className='p-5 m-1 rounded-xl box-shadow text-center'>
-                        <img src={product3} alt="" className='m-auto w-full' />
-                        <div className='mt-3 mb-2'>
-                            <h6 className='text-[#44474B] mb-1'>iPhone 14 Pro</h6>
-                            <h6 className='text-[18px] font-semibold'>From ₹ 69,900</h6>
-                        </div>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className='p-5 m-1 rounded-xl box-shadow text-center'>
-                        <img src={product4} alt="" className='m-auto w-full' />
-                        <div className='mt-3 mb-2'>
-                            <h6 className='text-[#44474B] mb-1'>iPhone 14 Pro</h6>
-                            <h6 className='text-[18px] font-semibold'>From ₹ 69,900</h6>
-                        </div>
-                    </div>
-                </SwiperSlide>
+                    </SwiperSlide>
+                ))}
+
 
 
             </Swiper>

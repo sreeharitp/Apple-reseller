@@ -7,11 +7,33 @@
 
 body {
     font-family: 'SF Pro Disply';
+    letter-spacing: 0.35px;
 }
 p{
     line-height: 1.4;
     color: #44474B;
 }
 .box-shadow{
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    box-shadow: rgba(84, 97, 101, 0.2) 0px 1px 15px 0px;
 }
+.splide__arrow svg {
+    fill: #ffffff !important;
+    height: 2.5em;
+    transition: fill .2s linear;
+    width: 2.5em;
+}
+label{
+    font-size: 14px;
+    opacity: 0.9;
+}
+input,textarea{
+    width: 100%;
+    border: 1px solid #E4E7E9;
+    border-radius: 4px;
+    padding: 0.5rem !important;
+    outline: none;
+}
+
+.trans {
+    transition: all 0.3s ease-in-out;
+  }
