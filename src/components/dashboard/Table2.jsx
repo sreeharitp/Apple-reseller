@@ -4,7 +4,7 @@ import { productList } from '../../constants'
 const Table2 = () => {
     return (
         <div className='overflow-x-scroll'>
-            <table className='w-full mt-8 border'>
+            <table className='w-full mt-8 border table'>
                 <thead>
                     <tr className='bg-[#F2F4F5]'>
                         <td>Product Name</td>

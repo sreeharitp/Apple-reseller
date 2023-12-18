@@ -11,7 +11,7 @@ const Singleproduct = () => {
   return (
     <div className="box-width padding-x pt-16">
       <div className="flex flex-col sm:flex-row items-start gap-12">
-        <div className="w-full sm:w-[45%] xl:w-[35%]">
+        <div className="w-full sm:w-[45%] xl:w-[35%] sm:sticky sm:top-0">
           <ProductSlider />
         </div>
         <div className="w-full sm:w-[55%] xl:w-[65%]">

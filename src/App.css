@@ -39,13 +39,13 @@ input,textarea{
     transition: all 0.3s ease-in-out;
   }
 
-  td{
+  .table td{
     padding: 0.65rem 1rem;
     font-size: 14px;
     color: #5F6C72;
     border-bottom: 1px solid #E4E7E9;
   }
-  thead td{
+  .table thead td{
     font-weight: 500;
     color: #000;
   }
