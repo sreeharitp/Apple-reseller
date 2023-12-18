@@ -57,7 +57,7 @@ const Productlist = () => {
               </Menu>
             </div>
           </div>
-          <div class="grid grid-cols-2 sm:grid-cols-2  2xl:grid-cols-4 gap-3 sm:gap-4">
+          <div class="grid grid-cols-2 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-2.5 sm:gap-4">
             {collection.map((items) => (
               <Link to="/product_single" key={items.id}>
                 <div className="m-1">

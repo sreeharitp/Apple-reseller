@@ -10,13 +10,13 @@
     }
   
     .padding-x {
-      @apply xl:px-24 px-6;
+      @apply xl:px-24 px-4;
     }
     .padding-l {
-      @apply xl:pl-24 pl-6;
+      @apply xl:pl-24 pl-4;
     }
     .padding-r {
-      @apply xl:pr-24 pr-6;
+      @apply xl:pr-24 pr-4;
     }
   
     .padding-y {
